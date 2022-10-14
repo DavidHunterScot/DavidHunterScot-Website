@@ -118,7 +118,8 @@ nav a
 
 main a
 {
-  font-weight: bold;
+  font-weight: 600;
+  color: var( --color-text-alt );
 }
 
 footer
