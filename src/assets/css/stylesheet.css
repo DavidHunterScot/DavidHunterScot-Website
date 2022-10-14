@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
+:root
+{
+  
+}
+
+html,
+body
+{
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #eee;
+  color: #222;
+}
+
+.container
+{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+header h1
+{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+header p
+{
+  color: #888;
+}
+
+footer
+{
+  text-align: centerd;
+  font-size: 0.8rem;
+}
