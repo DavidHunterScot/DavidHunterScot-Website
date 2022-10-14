@@ -31,6 +31,11 @@ body
   color: var( --color-text );
 }
 
+a
+{
+  color: var( --color-text );
+}
+
 .container
 {
   max-width: 1200px;
@@ -45,9 +50,28 @@ header h1
   text-transform: uppercase;
 }
 
+header h1 a
+{
+  text-decoration: none;
+}
+
 header p
 {
   color: #888;
+}
+
+nav .container
+{
+  display: flex;
+  gap: 1rem;
+}
+
+nav a
+{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 footer
