@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *,
 *::before,
 *::after
@@ -8,9 +10,15 @@
 :root
 {
   --color-dark: #222;
+  --color-dark-alt: #333;
   --color-light: #eee;
+  --color-light-alt: #fff;
   --color-text: var( --color-dark );
+  --color-text-alt: var( --color-dark-alt );
   --color-background: var( --color-light );
+  --color-background-alt: var( --color-light-alt );
+  
+  --font-poppins: 'Poppins', sans-serif;
 }
 
 @media( prefers-color-scheme: dark )
@@ -18,17 +26,29 @@
   :root
   {
     --color-text: var( --color-light );
+    --color-text-alt: var( --color-light-alt );
     --color-background: var( --color-dark );
+    --color-background-alt: var( --color-dark-alt );
+  }
+}
+
+@media( prefers-color-scheme: light )
+{
+  nav
+  {
+    box-shadow: 3px 3px 5px #ddd;
   }
 }
 
 html,
 body
 {
-  font-family: sans-serif;
+  font-family: var( --font-poppins );
   font-size: 16px;
   background-color: var( --color-background );
   color: var( --color-text );
+  margin: 0;
+  padding: 0;
 }
 
 a
@@ -44,10 +64,22 @@ a
   padding: 1rem;
 }
 
+header
+{
+  background-color: var( --color-background-alt );
+}
+
+header .container
+{
+  padding-bottom: 0;
+}
+
 header h1
 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 header h1 a
@@ -58,6 +90,16 @@ header h1 a
 header p
 {
   color: #888;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav
+{
+  background-color: var( --color-background-alt );
 }
 
 nav .container
@@ -72,6 +114,11 @@ nav a
   font-weight: bold;
   font-size: 0.8rem;
   text-transform: uppercase;
+}
+
+main a
+{
+  font-weight: bold;
 }
 
 footer
