@@ -17,6 +17,7 @@
   --color-text-alt: var( --color-dark-alt );
   --color-background: var( --color-light );
   --color-background-alt: var( --color-light-alt );
+  --color-text-muted: #888;
   
   --font-poppins: 'Poppins', sans-serif;
 }
@@ -89,7 +90,7 @@ header h1 a
 
 header p
 {
-  color: #888;
+  color: var( --color-text-muted );
   margin: 0;
   padding: 0;
   font-size: 0.8rem;
@@ -120,6 +121,58 @@ main a
 {
   font-weight: 600;
   color: var( --color-text-alt );
+}
+
+h2.section-title
+{
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var( --color-text-muted );
+  margin: 0;
+}
+
+.blog-entries .title
+{
+  font-size: 1.6rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.blog-entry .section-title
+{
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var( --color-text-muted );
+}
+
+.blog-entry .title
+{
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.blog-entries .metadata,
+.blog-entry .metadata
+{
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.blog-entries .buttons
+{
+  display: flex;
+}
+
+.blog-entries .buttons a
+{
+  padding: 0.5rem 1rem;
+  background-color: var( --color-background-alt );
+  color: var( --color-text-muted );
+  border-radius: 8px;
+  text-decoration: none;
 }
 
 footer

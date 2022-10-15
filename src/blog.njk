@@ -1,0 +1,12 @@
+---
+title: Blog
+layout: 'base.njk'
+---
+
+<h2 class="section-title">All Blog Entries</h2>
+
+<section class="blog-entries">
+  {% for entry in collections.entry | reverse %}
+    {% include 'entry-snippet.njk' %}
+  {% endfor %} 
+</section>
