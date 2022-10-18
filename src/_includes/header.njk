@@ -7,8 +7,17 @@
 
 <nav>
   <div class="container">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
+    <a href="/"{% if page.url == '/' %} class="current"{% endif %}>Home</a>
+    <a href="/about/"{% if page.url.substr( 0, 7 ) == '/about/' %} class="current"{% endif %}>About</a>
+    <a href="/blog/"{% if page.url.substr( 0, 6 ) == '/blog/' %} class="current"{% endif %}>Blog</a>
   </div>
 </nav>
+
+{% if page.url.substr( 0, 6 ) == '/blog/' %}
+<div class="blog-nav">
+  <div class="container">
+      <span><b>Blogs:</b></span>
+      <a href="/blog/movies/"{% if page.url.substr( 0, 13 ) == '/blog/movies/' %} class="current"{% endif %}>Movies</a>
+  </div>
+</div>
+{% endif %}

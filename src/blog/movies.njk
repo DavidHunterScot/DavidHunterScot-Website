@@ -1,11 +1,9 @@
 ---
 title: Movies Blog
 layout: "base.njk"
-tags: "none"
 ---
 
 <h2 class="section-title">Blog Entries for Movies</h2>
-<p><a href="/blog">Back to Main BLog</a></p>
 
 <section class="blog-entries">
   {% for entry in collections.movie | reverse %}

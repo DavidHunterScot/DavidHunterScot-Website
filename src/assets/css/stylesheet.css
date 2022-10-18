@@ -117,6 +117,39 @@ nav a
   text-transform: uppercase;
 }
 
+nav a:hover,
+nav a.current
+{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.blog-nav
+{
+  background-color: var(--color-background-alt);
+  opacity: 0.5;
+}
+
+.blog-nav .container
+{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.blog-nav a
+{
+  text-decoration: none;
+}
+
+.blog-nav a:hover,
+.blog-nav a.current
+{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
 main a
 {
   font-weight: 600;
