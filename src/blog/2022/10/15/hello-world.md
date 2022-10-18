@@ -1,6 +1,5 @@
 ---
 title: Hello World
-author: David Hunter
 date: 2022-10-15
 time: '00:52'
 description: This is my first blog entry.

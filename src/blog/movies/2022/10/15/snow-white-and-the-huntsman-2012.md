@@ -1,6 +1,5 @@
 ---
 title: 'Movie: Snow White and the Huntsman (2012)'
-author: David Hunter
 date: 2022-10-15
 time: '02:42'
 description: Just watched a movie called Snow White and the Huntsman released a decade ago.
