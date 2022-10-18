@@ -4,9 +4,12 @@ layout: 'base.njk'
 ---
 
 <h2 class="section-title">All Blog Entries</h2>
+<p><b>Blogs:</b> <a href="/blog/movies">Movies</a></p>
 
 <section class="blog-entries">
   {% for entry in collections.entry | reverse %}
-    {% include 'entry-snippet.njk' %}
+    {% if entry.data.date %}
+      {% include 'entry-snippet.njk' %}
+    {% endif %}
   {% endfor %} 
 </section>
