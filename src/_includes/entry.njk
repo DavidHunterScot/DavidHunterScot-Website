@@ -3,8 +3,18 @@ layout: 'base.njk'
 ---
 
 <article class="blog-entry">
-  <p class="section-title">Blog Entry</p>
-  <h2 class="title">{{ title }}</h2>
-  <p class="metadata">Published by {{ author }} on {{ date | postDate }} at {{ time }}.</p>
-  {{ content | safe }}
+  <div class="metadata">
+    {% if avatarURL %}
+      <div class="avatar"><img src="{{ avatarURL }}" alt="{{ author }}'s Avatar"></div>
+    {% endif %}
+    <div class="info">
+      <p><b>Written By</b><br>{{ author }}</p>
+      <p><b>Published</b><br>{{ date | postDate }} at {{ time }}</p>
+    </div>
+  </div>
+  <div class="content">
+    <h2>{{ title }}</h2>
+
+    {{ content | safe }}
+  </div>
 </article>
