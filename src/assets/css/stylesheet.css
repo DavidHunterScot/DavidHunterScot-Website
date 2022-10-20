@@ -199,6 +199,12 @@ h2.section-title
   margin: 0;
 }
 
+.blog-entry .content .title
+{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
 .blog-entries .metadata,
 .blog-entry .metadata
 {
