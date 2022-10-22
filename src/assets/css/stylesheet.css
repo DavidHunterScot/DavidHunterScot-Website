@@ -185,6 +185,18 @@ h2.section-title
   margin: 0;
 }
 
+.blog-entries,
+.blog-entry
+{
+  max-width: 800px;
+}
+
+.blog-entry
+{
+  display: flex;
+  flex-direction: column;
+}
+
 .blog-entries .title
 {
   font-size: 1.6rem;
@@ -208,11 +220,35 @@ h2.section-title
   margin: 0;
 }
 
+.blog-entry .content .title
+{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
 .blog-entries .metadata,
 .blog-entry .metadata
 {
   font-size: 0.8rem;
   margin: 0;
+}
+
+.blog-entry .content
+{
+  order: 1;
+}
+
+.blog-entry .metadata
+{
+  order: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-entry .metadata .avatar img
+{
+  width: 100px;
+  border-radius: 50%;
 }
 
 .blog-entries .buttons
@@ -233,4 +269,38 @@ footer
 {
   text-align: centerd;
   font-size: 0.8rem;
+}
+
+@media (min-width:800px)
+{
+  .blog-entry
+  {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .blog-entry .metadata
+  {
+    width: 300px;
+    margin-top: 20px;
+    order: 1;
+    flex-direction: column;
+  }
+
+  .blog-entry .metadata .avatar img
+  {
+    width: 150px;
+  }
+
+  .blog-entry .content
+  {
+    max-width: 600px;
+    order: 2;
+  }
+
+  .blog-entry .content:first-child
+  {
+    margin-top: 0;
+  }
 }
