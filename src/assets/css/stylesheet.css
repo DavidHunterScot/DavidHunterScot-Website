@@ -31,6 +31,14 @@
     --color-background: var( --color-dark );
     --color-background-alt: var( --color-dark-alt );
   }
+  
+  body.toggle-color-scheme
+  {
+    --color-text: var( --color-dark );
+    --color-text-alt: var( --color-dark-alt );
+    --color-background: var( --color-light );
+    --color-background-alt: var( --color-light-alt );
+  }
 }
 
 @media( prefers-color-scheme: light )
@@ -38,6 +46,19 @@
   nav
   {
     box-shadow: 3px 3px 5px #ddd;
+  }
+  
+  body.toggle-color-scheme
+  {
+    --color-text: var( --color-light );
+    --color-text-alt: var( --color-light-alt );
+    --color-background: var( --color-dark );
+    --color-background-alt: var( --color-dark-alt );
+  }
+  
+  body.toggle-color-scheme nav
+  {
+    box-shadow: none;
   }
 }
 
