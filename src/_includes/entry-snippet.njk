@@ -1,6 +1,6 @@
 <article>
   <h3 class="title">{{ entry.data.title }}</h3>
-  <p class="metadata">Published by {{ entry.data.author }} on {{ entry.data.date | postDate }} at {{ entry.data.time }}.</p>
+  <p class="metadata">Published by {% if entry.data.avatarURL %}<img src="{{ entry.data.avatarURL }}" alt="{{ entry.data.author }}'s Avatar" class="avatar">{% endif %} {{ entry.data.author }} on {{ entry.data.date | postDate }} at {{ entry.data.time }}.</p>
   <p class="description">{{ entry.data.description }}</p>
   <p class="buttons">
     <a href="{{ entry.url }}">Read More</a>
