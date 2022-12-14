@@ -9,13 +9,15 @@ layout: 'base.njk'
 
 <h3>Contact Me</h3>
 
-<p>
-  You can send me an email anytime:
-  <script type="text/javascript">
-    document.write('<a href="mailto:">' + 'contact' + '@' + 'davidhunter' + '.' + 'scot' + '</a>');
-  </script>
-  <noscript>contact [at] davidhunter [dot] scot</noscript>
-</p>
+<p>You can send me an email anytime: <span id="email_address">contact [at] davidhunter [dot] scot</span></p>
+
+<script>
+  var email_address = document.getElementById( 'email_address' );
+
+  var the_email_address = email_address.innerHTML.replace( ' [at] ', '@' ).replace( ' [dot] ', '.' );
+
+  email_address.innerHTML = '<a href="mailto:' + the_email_address + '">' + the_email_address + '</a>'
+</script>
 
 <h3>My Website</h3>
 
