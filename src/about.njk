@@ -16,7 +16,7 @@ layout: 'base.njk'
 
   var the_email_address = email_address.innerHTML.replace( ' [at] ', '@' ).replace( ' [dot] ', '.' );
 
-  email_address.innerHTML = '<a href="mailto:' + the_email_address + '">' + the_email_address + '</a>'
+  email_address.innerHTML = '<a href="mailto:' + the_email_address + '" target="_blank">' + the_email_address + '</a>'
 </script>
 
 <h3>My Website</h3>
