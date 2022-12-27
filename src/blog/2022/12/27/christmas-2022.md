@@ -5,8 +5,6 @@ date: 2022-12-27
 time: '14:30'
 ---
 
-## CHRISTMAS 2022
-
 Hey all, I hope you are having a good festive period surrounded by those that matter to you, and that you are all warm and healthy.
 
 This year, I got a range of gifts, some from myself, and some from others. These are detailed below.
@@ -84,7 +82,7 @@ The USB Mini Vacuum was probably a message from my mother to do more regular cle
 
 As for the Minecraft Creeper Hot Chocolate Mug Set, the mug is HUGE and makes my normally large coffee (Kenco Americano Grande) rather small, and only fills like half the mug, but I enjoy it all the same. A little bit of a different experience drinking out of it, because it is a square mug, and has to be since its Minecraft, but its all part of the fun. Thank you to my McG relatives for this amazing gift.
 
-## Conclusion
+### Conclusion
 
 The most important thing to me about this Christmas, was not the gifts I got myself or received from others, but rather having my family and relatives around me and able to spend time with all of them. Today is our planned annual family get together. This is what makes Christmas so magical.
 
