@@ -83,6 +83,11 @@ a
   color: var( --color-text );
 }
 
+img
+{
+  max-width: 100%;
+}
+
 .container
 {
   max-width: 1200px;
