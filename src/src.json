@@ -1,5 +1,7 @@
 {
+    "images_url": "https://images.staticly.ict.rocks",
     "stylesheets": [
+        "https://webfonts.staticly.ict.rocks/poppins/poppins.css",
         "/assets/css/stylesheet.css"
     ],
     "footer_javascripts": [

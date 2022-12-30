@@ -5,7 +5,7 @@ layout: 'base.njk'
 <article class="blog-entry">
   <div class="metadata">
     {% if avatarURL %}
-      <div class="avatar"><img src="{{ avatarURL }}" alt="{{ author }}'s Avatar"></div>
+      <div class="avatar"><img src="{{ images_url }}{{ avatarURL }}" alt="{{ author }}'s Avatar"></div>
     {% endif %}
     <div class="info">
       <p><b>Written By</b><br>{{ author }}</p>
