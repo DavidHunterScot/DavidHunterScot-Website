@@ -1,4 +1,4 @@
-<? include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.php" ?>
+<?php include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.php"; ?>
 
 <section class="w3-ios-dark-blue w3-padding-64">
     <div class="w3-auto w3-padding w3-padding-64">
@@ -9,4 +9,4 @@
     </div>
 </section>
 
-<? include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "footer.php" ?>
+<?php include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "footer.php"; ?>
