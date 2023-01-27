@@ -1,10 +1,9 @@
 
-        <footer>
-            <div class="w3-auto w3-padding">
-                <p class="w3-center">Copyright &copy; David Hunter.</p>
             </div>
-        </footer>
+        </main>
 
-        <script src="/assets/js/anti-email-harvesting.js"></script>
+        <?php include __DIR__ . DIRECTORY_SEPARATOR . 'site-footer.php'; ?>
+
+        <?php include __DIR__ . DIRECTORY_SEPARATOR . 'footer-javascripts.php'; ?>
     </body>
 </html>

@@ -1,12 +1,15 @@
-<?php include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.php"; ?>
+<?php
 
-<section class="w3-ios-dark-blue w3-padding-64">
-    <div class="w3-auto w3-padding w3-padding-64">
-        <h2 class="w3-center w3-xxxlarge">Hello, I'm <b>David Hunter</b>!</h2>
-        <p class="w3-center w3-large"><i>Internet Services Specialist from Ayrshire, Scotland.</i></p>
-        <h3 class="w3-center"><b>Under Construction</b></h3>
-        <p class="w3-center">Reach out via email: <b class="email_address">contact [at] davidhunter [dot] scot</b></p>
-    </div>
-</section>
+$current_page = "home";
+
+include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.php";
+
+?>
+
+<h2>Welcome to my website!</h2>
+<p>It is heavily Under Construction, please bare that in mind. Some things may break or disappear altogether. You can always check back at a later time to see how things are progressing.</p>
+
+<p>You're probably here to learn about me, so head on over to the about page.</p>
+<p><a href="/about">More About Me</a><br><a href="/blog">Check out my Blog</a></p>
 
 <?php include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "footer.php"; ?>
