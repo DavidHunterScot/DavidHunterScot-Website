@@ -5,7 +5,7 @@ $page_title = "Blog";
 
 include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.php";
 
-$root_path_to_blog_entries = __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "blog-entries";
+$root_path_to_blog_entries = __DIR__ . DIRECTORY_SEPARATOR . "blog";
 
 $entries = array();
 
@@ -40,6 +40,12 @@ function get_blog_entries( String $path_to_blog_entries, &$entries, $root_path_t
         $entry['description'] = $article_description;
         $entry['author'] = $article_author;
         $entry['permalink'] = str_replace( array( "\\", ".php" ), "/", substr( $path_to_dir_item, strlen( $root_path_to_blog_entries ) + 1 ) );
+
+        if( $article_author == "David Hunter" )
+        {
+            include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "config.php";
+            $entry['avatar_url'] = $avatars_url . "/davidhunter_illustration_transparent_1.png";
+        }
 
         $entries[] = $entry;
     }
