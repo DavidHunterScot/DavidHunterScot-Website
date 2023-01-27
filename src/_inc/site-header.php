@@ -12,12 +12,3 @@
         <a href="/blog/"<?php if( isset( $current_page ) && $current_page == "blog" ): ?> class="current"<?php endif; ?>>Blog</a>
     </div>
 </nav>
-
-<?php if( isset( $current_page ) && $current_page == "blog" ): ?>
-<div class="blog-nav">
-    <div class="container">
-        <span><b>Blogs:</b></span>
-        <a href="/blog/movies/"<?php if( $current_page == "blog movies" ): ?> class="current"<?php endif; ?>>Movies</a>
-    </div>
-</div>
-<?php endif; ?>
