@@ -9,4 +9,4 @@ $stylesheets[] = "/assets/css/stylesheet.css";
 $footer_javascripts[] = "/assets/js/anti-email-harvesting.js";
 $footer_javascripts[] = "/assets/js/toggle-color-scheme.js";
 
-$blog_datetime_format = "l jS F Y \a\\t g:i a";
+$blog_datetime_format = "jS F Y \a\\t g:i a";
