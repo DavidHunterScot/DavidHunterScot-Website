@@ -1,6 +1,7 @@
 <?php
 
 $current_page = "blog";
+$page_title = $article_title . " - Blog";
 
 include __DIR__ . DIRECTORY_SEPARATOR . "header.php";
 
