@@ -8,7 +8,6 @@ $article_time = "17:00";
 
 $article_content = function()
 {
-    define( "D_S", DIRECTORY_SEPARATOR );
     include __DIR__ . D_S . ".." . D_S . ".." . D_S . ".." . D_S . ".." . D_S . "_inc" . D_S . "config.php";
 ?>
 
@@ -22,7 +21,4 @@ $article_content = function()
 };
 
 if( isset( $path_to_input_file ) && basename( $path_to_input_file ) == basename( __FILE__ ) )
-{
-    define( "D_S", DIRECTORY_SEPARATOR );
     include __DIR__ . D_S . ".." . D_S . ".." . D_S . ".." . D_S . ".." . D_S . "_inc" . D_S . "entry.php";
-}
