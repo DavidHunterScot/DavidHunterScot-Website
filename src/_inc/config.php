@@ -1,9 +1,13 @@
 <?php
 
-$images_url = "https://images.staticly.ict.rocks";
+$staticly_domain = "staticly.ict.rocks";
+
+$images_url = "https://images." . $staticly_domain;
 $avatars_url = $images_url . "/avatars";
 
-$stylesheets[] = "https://webfonts.staticly.ict.rocks/poppins/poppins.css";
+$webfonts_url = "https://webfonts." . $staticly_domain;
+
+$stylesheets[] = $webfonts_url . "/poppins/poppins.css";
 $stylesheets[] = "/assets/css/stylesheet.css";
 
 $footer_javascripts[] = "/assets/js/anti-email-harvesting.js";
