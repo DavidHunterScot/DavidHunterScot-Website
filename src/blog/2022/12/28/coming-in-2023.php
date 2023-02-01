@@ -10,7 +10,7 @@ $article_content = function()
 {
 ?>
 
-<p><?php global $article_description; echo $article_description; ?></p>
+<p>In this blog article, I will lay out what I hope the new year will bring.</p>
 
 <h3>A Look Back at 2022</h3>
 

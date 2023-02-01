@@ -10,7 +10,7 @@ $article_content = function()
 {
 ?>
 
-<p><?php global $article_description; echo $article_description; ?></p>
+<p>My brand new games website is now live!</p>
 
 <p>For many many years, I have on and off had a game on my website that was popular when I was in school. Today, I am very proud to announce its relaunch.</p>
 
