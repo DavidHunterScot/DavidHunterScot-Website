@@ -229,6 +229,13 @@ h2.section-title
   order: 1;
 }
 
+.blog-entry .content img
+{
+  margin-left: -1rem;
+  margin-right: -1rem;
+  max-width: calc( 100% + 2rem );
+}
+
 .blog-entry .metadata
 {
   order: 2;
@@ -288,6 +295,7 @@ footer
   {
     max-width: 600px;
     order: 2;
+    padding: 1rem;
   }
 
   .blog-entry .content:first-child
