@@ -1,11 +1,9 @@
 <?php
 
-$staticly_domain = "staticly.ict.rocks";
-
-$images_url = "https://images." . $staticly_domain;
+$images_url = "/assets/images";
 $avatars_url = $images_url . "/avatars";
 
-$webfonts_url = "https://webfonts." . $staticly_domain;
+$webfonts_url = "/assets/webfonts";
 
 $stylesheets[] = $webfonts_url . "/poppins/poppins.css";
 $stylesheets[] = "/assets/css/stylesheet.css";
