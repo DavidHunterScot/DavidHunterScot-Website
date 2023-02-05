@@ -8,7 +8,6 @@
 <nav>
     <div class="container">
         <a href="/"<?php if( isset( $current_page ) && $current_page == "home" ): ?> class="current"<?php endif; ?>>Home</a>
-        <a href="/about/"<?php if( isset( $current_page ) && $current_page == "about" ): ?> class="current"<?php endif; ?>>About</a>
         <a href="/blog/"<?php if( isset( $current_page ) && $current_page == "blog" ): ?> class="current"<?php endif; ?>>Blog</a>
     </div>
 </nav>
