@@ -16,6 +16,9 @@
   --color-background: var( --color-light );
   --color-background-alt: var( --color-light-alt );
   --color-text-muted: #888;
+  --color-shadow-light: #ddd;
+  --color-shadow-dark: #1b1b1b;
+  --color-shadow: #ddd;
   
   --font-poppins: 'Poppins', sans-serif;
 }
@@ -28,6 +31,7 @@
     --color-text-alt: var( --color-light-alt );
     --color-background: var( --color-dark );
     --color-background-alt: var( --color-dark-alt );
+    --color-shadow: var( --color-shadow-dark );
   }
   
   body.toggle-color-scheme
@@ -37,13 +41,18 @@
     --color-background: var( --color-light );
     --color-background-alt: var( --color-light-alt );
   }
+
+  body.toggle-color-scheme header
+  {
+    --color-shadow: var( --color-shadow-light );
+  }
 }
 
 @media( prefers-color-scheme: light )
 {
-  nav
+  header
   {
-    box-shadow: 3px 3px 5px #ddd;
+    --color-shadow: var( --color-shadow-light );
   }
   
   body.toggle-color-scheme
@@ -54,9 +63,9 @@
     --color-background-alt: var( --color-dark-alt );
   }
   
-  body.toggle-color-scheme nav
+  body.toggle-color-scheme header
   {
-    box-shadow: none;
+    --color-shadow: var( --color-shadow-dark );
   }
 }
 
@@ -98,6 +107,7 @@ img
 header
 {
   background-color: var( --color-background-alt );
+  box-shadow: 3px 3px 5px var( --color-shadow );
 }
 
 header .container
