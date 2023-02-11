@@ -5,12 +5,12 @@ $page_title = $article_title . " - Blog";
 
 include __DIR__ . DIRECTORY_SEPARATOR . "config.php";
 
-if( $article_author == "David Hunter" )
-    $avatar_url = $avatars_url . "/davidhunter_illustration_transparent_1.png";
-
 $page_content = function( String $article_title, String $article_author, String $article_date, String $article_time, callable $article_content )
 {
     include __DIR__ . DIRECTORY_SEPARATOR . "config.php";
+    
+    if( $article_author == "David Hunter" )
+        $avatar_url = $avatars_url . "/davidhunter_illustration_transparent_1.png";
 ?>
 
 <article class="blog-entry">
