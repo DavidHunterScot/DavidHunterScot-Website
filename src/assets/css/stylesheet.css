@@ -281,6 +281,42 @@ footer
   font-size: 0.8rem;
 }
 
+.home_hero
+{
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home_hero .info .head_line_1
+{
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.home_hero .into .head_line_1 b
+{
+  font-weight: 900;
+}
+
+.home_hero .info .head_line_2
+{
+  font-size: 3.3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.home_hero .avatar img
+{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: var( --color-background-alt );
+}
+
 @media (min-width:800px)
 {
   header .container
@@ -329,5 +365,21 @@ footer
   .blog-entry .content:first-child
   {
     margin-top: 0;
+  }
+
+  .home_hero
+  {
+    flex-direction: row;
+  }
+
+  .home_hero .info
+  {
+    width: 60%;
+  }
+
+  .home_hero .avatar
+  {
+    width: 40%;
+    text-align: right;
   }
 }
