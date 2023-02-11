@@ -3,11 +3,11 @@
 $page_title = 'Not Found (404)';
 $friendly_urls = false;
 
-include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.php";
-
+$page_content = function()
+{
 ?>
 
-<h1><?php echo $page_title; ?></h1>
+<h1>Not Found (404)</h1>
 
 <p>The resource you tried to access cannot be found.</p>
 
@@ -17,6 +17,9 @@ include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.p
     <li>(Optionally) If you clicked a hyperlink or button on another resource, that could now be considered outdated. Please let them know about this so it can be updated or removed accordingly.</li>
 </ul>
 
-<p>Feel free to get in touch if you believe there is an issue with this website, or have any further questions or concerns. Details are available on the <a href="/about">about</a> page.</p>
+<p>Feel free to get in touch if you believe there is an issue with this website, or have any further questions or concerns. Details are available on the <a href="/">home</a> page.</p>
 
-<?php include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "footer.php"; ?>
+<?php
+};
+
+include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "base.php";
