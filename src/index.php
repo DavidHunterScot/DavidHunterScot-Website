@@ -2,8 +2,8 @@
 
 $current_page = "home";
 
-include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.php";
-
+$page_content = function()
+{
 ?>
 
 <h2>Hello, I'm David.</h2>
@@ -21,4 +21,7 @@ include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.p
 
 <p>For those that are technically minded, I write software for various projects. Check out the <a href="https://github.com/DavidHunterScot/Website" target="_blank">source code for this website</a> or my other projects on <a href="https://github.com/DavidHunterScot" target="_blank">GitHub</a></p>
 
-<?php include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "footer.php"; ?>
+<?php
+};
+
+include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "base.php";

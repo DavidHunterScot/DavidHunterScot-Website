@@ -3,11 +3,14 @@
 $current_page = "blog";
 $page_title = $article_title . " - Blog";
 
-include __DIR__ . DIRECTORY_SEPARATOR . "header.php";
+include __DIR__ . DIRECTORY_SEPARATOR . "config.php";
 
 if( $article_author == "David Hunter" )
     $avatar_url = $avatars_url . "/davidhunter_illustration_transparent_1.png";
 
+$page_content = function( String $article_title, String $article_author, String $article_date, String $article_time, callable $article_content )
+{
+    include __DIR__ . DIRECTORY_SEPARATOR . "config.php";
 ?>
 
 <article class="blog-entry">
@@ -25,8 +28,11 @@ if( $article_author == "David Hunter" )
     <div class="content">
         <h2 class="title"><?php echo $article_title; ?></h2>
 
-        <?php echo $article_content(); ?>
+        <?php $article_content(); ?>
     </div>
 </article>
 
-<?php include __DIR__ . DIRECTORY_SEPARATOR . "footer.php"; ?>
+<?php
+};
+
+include __DIR__ . DIRECTORY_SEPARATOR . "base.php";

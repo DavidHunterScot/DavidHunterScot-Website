@@ -3,8 +3,8 @@
 $current_page = "staticphp";
 $page_title = "StaticPHP";
 
-include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.php";
-
+$page_content = function()
+{
 ?>
 
 <h2>Welcome to StaticPHP!</h2>
@@ -24,4 +24,7 @@ include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.p
 <p>If you manage the server you deploy to yourself, then you don't even need PHP at all, you can skip installing it and then that is one less thing to keep up-to-date with latest security patches, and one less thing to manage the configuration of, making for an instantly more secure deployment environment.</p>
 <p>Have PHP on your local machine or separate build server to build your site with StaticPHP and then PHP is no longer needed.</p>
 
-<?php include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "footer.php"; ?>
+<?php
+};
+
+include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "base.php";

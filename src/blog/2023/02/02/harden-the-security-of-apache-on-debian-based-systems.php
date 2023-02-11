@@ -8,7 +8,7 @@ $article_time = "21:21";
 
 $article_content = function()
 {
-    include __DIR__ . D_S . ".." . D_S . ".." . D_S . ".." . D_S . ".." . D_S . "_inc" . D_S . "config.php";
+    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "config.php";
 ?>
 
 <p>Apache is the software used to run a web server, but default installation isn't that secure. Let's harden it!</p>
@@ -138,4 +138,4 @@ export APACHE_RUN_GROUP=apache
 };
 
 if( isset( $path_to_input_file ) && basename( $path_to_input_file ) == basename( __FILE__ ) )
-    include __DIR__ . D_S . ".." . D_S . ".." . D_S . ".." . D_S . ".." . D_S . "_inc" . D_S . "entry.php";
+    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "entry.php";

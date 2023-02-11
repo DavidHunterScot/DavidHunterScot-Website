@@ -38,4 +38,4 @@ $article_content = function()
 };
 
 if( isset( $path_to_input_file ) && basename( $path_to_input_file ) == basename( __FILE__ ) )
-    include __DIR__ . D_S . ".." . D_S . ".." . D_S . ".." . D_S . ".." . D_S . "_inc" . D_S . "entry.php";
+    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "entry.php";

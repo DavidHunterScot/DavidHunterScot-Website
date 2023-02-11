@@ -3,12 +3,6 @@
 $current_page = "blog";
 $page_title = "Blog";
 
-include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "header.php";
-
-$root_path_to_blog_entries = __DIR__ . DIRECTORY_SEPARATOR . "blog";
-
-$entries = array();
-
 function get_blog_entries( String $path_to_blog_entries, &$entries, $root_path_to_blog_entries )
 {
     $dir_items = scandir( $path_to_blog_entries );
@@ -51,10 +45,17 @@ function get_blog_entries( String $path_to_blog_entries, &$entries, $root_path_t
     }
 }
 
-get_blog_entries( $root_path_to_blog_entries, $entries, $root_path_to_blog_entries );
+$page_content = function()
+{
+    include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "config.php";
+    
+    $root_path_to_blog_entries = __DIR__ . DIRECTORY_SEPARATOR . "blog";
 
-$entries = array_reverse( $entries );
+    $entries = array();
+    
+    get_blog_entries( $root_path_to_blog_entries, $entries, $root_path_to_blog_entries );
 
+    $entries = array_reverse( $entries );
 ?>
 
 <h2 class="section-title">All Blog Entries</h2>
@@ -69,4 +70,7 @@ $entries = array_reverse( $entries );
     <?php endif; ?>
 </section>
 
-<?php include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "footer.php"; ?>
+<?php
+};
+
+include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "base.php";
