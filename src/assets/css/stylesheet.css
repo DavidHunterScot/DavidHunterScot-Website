@@ -3,7 +3,6 @@
 *::after
 {
   box-sizing: border-box;
-  line-height: 1.6;
 }
 
 :root
@@ -68,12 +67,14 @@ body
   font-size: 16px;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 body
 {
   background-color: var( --color-background );
   color: var( --color-text );
+  overflow-y: scroll;
 }
 
 a
@@ -101,53 +102,64 @@ header
 
 header .container
 {
-  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-header h1
+header .logo
 {
-  font-size: 1.4rem;
+  display: flex;
+  width: 190px;
+}
+
+header .logo .title
+{
+  font-size: 2rem;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  line-height: 1;
 }
 
-header h1 a
+header .logo .title a
 {
   text-decoration: none;
 }
 
-header p
+header .logo .tagline
 {
   color: var( --color-text-muted );
   margin: 0;
   padding: 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 400;
+  border-left: 1px solid var( --color-text-muted );
+  margin-left: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+  font-style: italic;
+  line-height: 1.1;
 }
 
-nav
+header nav
 {
   background-color: var( --color-background-alt );
-}
-
-nav .container
-{
   display: flex;
   gap: 1rem;
+  padding-top: 1rem;
 }
 
-nav a
+header nav a
 {
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
-nav a:hover,
-nav a.current
+header nav a:hover,
+header nav a.current
 {
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -271,6 +283,22 @@ footer
 
 @media (min-width:800px)
 {
+  header .container
+  {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav
+  {
+    padding-top: 0;
+  }
+
+  header nav a
+  {
+    padding-top: 1rem;
+  }
+
   .blog-entry
   {
     flex-direction: row;
