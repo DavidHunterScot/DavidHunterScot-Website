@@ -8,6 +8,7 @@
         <nav>
             <a href="/"<?php if( isset( $current_page ) && $current_page == "home" ): ?> class="current"<?php endif; ?>>Home</a>
             <a href="/blog/"<?php if( isset( $current_page ) && $current_page == "blog" ): ?> class="current"<?php endif; ?>>Blog</a>
+            <a href="https://bydh.me" target="_blank">More by DH</a>
         </nav>
     </div>
 </header>
