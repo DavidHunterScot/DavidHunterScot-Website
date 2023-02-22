@@ -3,6 +3,8 @@
 $current_page = "blog";
 $page_title = "Blog";
 
+$footer_javascripts[] = "/assets/js/blog-search.js";
+
 if( ! function_exists( "get_blog_entries" ) )
 {
     function get_blog_entries( String $path_to_blog_entries, &$entries, $root_path_to_blog_entries )
@@ -61,19 +63,52 @@ $page_content = function()
     $entries = array_reverse( $entries );
 ?>
 
+<form class="blog-search-form" id="blog-search-form">
+    <fieldset>
+        <input type="text" name="searchbox" id="searchbox">
+        <button type="submit">Search</button>
+    </fieldset>
+</form>
+
 <h2 class="section-title">All Blog Entries</h2>
 
 <section class="blog-entries">
     <?php if( isset( $entries ) && is_array( $entries ) && count( $entries ) > 0 ): ?>
         <?php foreach( $entries as $entry ): ?>
-            <?php include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "entry-snippet.php"; ?>
+            <?php
+                $entry_snippet = file_get_contents( __DIR__ . DIRECTORY_SEPARATOR . "api" . DIRECTORY_SEPARATOR . "blog" . DIRECTORY_SEPARATOR . "entry-snippet.txt" );
+
+                $avatar_image = isset( $entry['avatar_url'] ) ? '<img src="' . $entry['avatar_url'] . '" alt="' . $entry['author'] . '\'s Avatar" class="avatar">' : '';
+
+                $entry_snippet = str_replace
+                (
+                    array
+                    (
+                        "TITLE",
+                        "AVATAR IMAGE",
+                        "AUTHOR NAME",
+                        "DATETIME",
+                        "DESCRIPTION",
+                        "PERMALINK",
+                    ),
+                    array(
+                        $entry['title'],
+                        $avatar_image,
+                        $entry['author'],
+                        date( $blog_datetime_format, strtotime( $entry['date'] . " " . $entry['time'] ) ),
+                        $entry['description'],
+                        $entry['permalink'],
+                    ),
+                    $entry_snippet
+                );
+
+                echo $entry_snippet;
+            ?>
         <?php endforeach; ?>
     <?php else: ?>
         <p>No blog entries yet. Please check back later.</p>
     <?php endif; ?>
 </section>
-
-<p>Also available in <a href="/api/blog/entries.json" target="_blank">JSON format</a>.</p>
 
 <?php
 };

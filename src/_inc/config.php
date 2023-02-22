@@ -17,7 +17,7 @@ $stylesheets = array();
 $stylesheets[] = $webfonts_url . "/poppins/poppins.css";
 $stylesheets[] = "/assets/css/stylesheet.css";
 
-$footer_javascripts = array();
+//$footer_javascripts = array();
 $footer_javascripts[] = "/assets/js/anti-email-harvesting.js";
 $footer_javascripts[] = "/assets/js/toggle-color-scheme.js";
 
