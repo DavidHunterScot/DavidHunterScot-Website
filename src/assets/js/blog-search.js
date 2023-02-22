@@ -20,7 +20,7 @@ xhttp.onload = function()
 
             for( var r = 0; r < json_result.length; r++ )
             {
-                if( json_result[ r ].title.toLowerCase().includes( searchbox.value.toLowerCase() ) )
+                if( ( json_result[ r ].title.toLowerCase() + json_result[ r ].description.toLowerCase() ).includes( searchbox.value.toLowerCase() ) )
                 {
                     results.push( json_result[ r ] );
                 }
