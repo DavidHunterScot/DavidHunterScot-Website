@@ -9,6 +9,8 @@ if( ! function_exists( "get_blog_entries" ) )
 {
     function get_blog_entries( String $path_to_blog_entries, &$entries, $root_path_to_blog_entries )
     {
+        include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "config.php";
+        
         $dir_items = scandir( $path_to_blog_entries );
 
         foreach( $dir_items as $dir_item )
@@ -31,10 +33,11 @@ if( ! function_exists( "get_blog_entries" ) )
 
             if( ! isset( $article_title, $article_date, $article_time, $article_description, $article_author ) )
                 continue;
-            
+
             $entry['title'] = $article_title;
             $entry['date'] = $article_date;
             $entry['time'] = $article_time;
+            $entry['datetime'] = date( $blog_datetime_format, strtotime( $article_date . " " . $article_time ) );
             $entry['description'] = $article_description;
             $entry['author'] = $article_author;
             $entry['permalink'] = "/blog/" . str_replace( array( "\\", ".php" ), "/", substr( $path_to_dir_item, strlen( $root_path_to_blog_entries ) + 1 ) );
@@ -95,7 +98,7 @@ $page_content = function()
                         $entry['title'],
                         $avatar_image,
                         $entry['author'],
-                        date( $blog_datetime_format, strtotime( $entry['date'] . " " . $entry['time'] ) ),
+                        $entry['datetime'],
                         $entry['description'],
                         $entry['permalink'],
                     ),

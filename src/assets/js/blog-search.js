@@ -41,7 +41,7 @@ xhttp.onload = function()
                 .replace( "TITLE", results[ r ].title )
                 .replace( "AVATAR IMAGE", avatar_image )
                 .replace( "AUTHOR NAME", results[ r ].author )
-                .replace( "DATETIME", results[ r ].date + ' at ' + results[ r ].time )
+                .replace( "DATETIME", results[ r ].datetime )
                 .replace( "DESCRIPTION", results[ r ].description )
                 .replace( "PERMALINK", results[ r ].permalink );
             }
