@@ -370,6 +370,15 @@ footer
   padding: 0.4rem 0.8rem;
 }
 
+code.highlight
+{
+  padding: 2px 4px;
+  background-color: var( --color-background-alt );
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: var( --color-text-alt );
+}
+
 @media (min-width:800px)
 {
   header .container
