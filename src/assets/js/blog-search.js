@@ -20,7 +20,7 @@ xhttp.onload = function()
 
             for( var r = 0; r < json_result.length; r++ )
             {
-                if( ( json_result[ r ].title.toLowerCase() + json_result[ r ].description.toLowerCase() ).includes( searchbox.value.toLowerCase() ) )
+                if( ( json_result[ r ].title.toLowerCase() + json_result[ r ].description.toLowerCase() + json_result[ r ].datetime ).includes( searchbox.value.toLowerCase() ) )
                 {
                     results.push( json_result[ r ] );
                 }
@@ -28,11 +28,17 @@ xhttp.onload = function()
 
             var section_title = document.getElementsByClassName( "section-title" )[0];
 
-            section_title.innerHTML = "\"" + searchbox.value + "\" Entries";
+            if( searchbox.value.trim() != "" )
+                section_title.innerHTML = "\"" + searchbox.value + "\" Blog Entries";
+            else
+                section_title.innerHTML = "All Blog Entries";
 
             var blog_entries = document.getElementsByClassName( "blog-entries" )[0];
 
-            blog_entries.innerHTML = "Your search for \"" + searchbox.value + "\" returned " + results.length + " result" + ( results.length != 1 ? "s" : "" ) + ".";
+            if( searchbox.value.trim() != "" )
+                blog_entries.innerHTML = "Your search for \"" + searchbox.value + "\" returned " + results.length + " result" + ( results.length != 1 ? "s" : "" ) + ".";
+            else
+                blog_entries.innerHTML = "";
 
             for( var r = 0; r < results.length; r++ )
             {
