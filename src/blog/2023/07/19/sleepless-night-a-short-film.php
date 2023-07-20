@@ -11,7 +11,7 @@ $article_content = function()
     include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "config.php";
 ?>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WDVmnbn6l8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube-nocookie.com/embed/WDVmnbn6l8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p>This is my very first short film I produced entirely by myself in my bedroom. Hopefully you like it.</p>
 

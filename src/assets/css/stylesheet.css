@@ -445,3 +445,14 @@ code.highlight
     text-align: right;
   }
 }
+
+/* Responsive Videos (Embed and iFrame) */
+
+embed.video, iframe.video
+{
+  aspect-ratio: 16 / 9;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  max-width: calc( 100% + 2rem );
+  width: calc( 100% + 2rem );
+}
