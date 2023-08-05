@@ -448,7 +448,7 @@ code.highlight
 
 /* Responsive Videos (Embed and iFrame) */
 
-embed.video, iframe.video
+embed.video, iframe.video, video.video
 {
   aspect-ratio: 16 / 9;
   margin-left: -1rem;

@@ -11,6 +11,8 @@ $github_url = "https://github.com/DavidHunterScot/Website";
 $images_url = "/assets/images";
 $avatars_url = $images_url . "/avatars";
 
+$videos_url = "https://videos.staticly.ict.rocks";
+
 $webfonts_url = "https://webfonts.staticly.ict.rocks";
 
 $stylesheets = array();
