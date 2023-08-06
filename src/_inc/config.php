@@ -8,7 +8,7 @@ $static_site_generator = "StaticPHP";
 $static_site_generator_url = "https://github.com/DavidHunterScot/StaticPHP";
 $github_url = "https://github.com/DavidHunterScot/Website";
 
-$images_url = "/assets/images";
+$images_url = "https://images.staticly.ict.rocks";
 $avatars_url = $images_url . "/avatars";
 
 $videos_url = "https://videos.staticly.ict.rocks";

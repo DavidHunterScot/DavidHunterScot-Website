@@ -4,6 +4,7 @@ $current_page = "home";
 
 $page_content = function()
 {
+    include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "config.php";
 ?>
 
 <div class="home_hero">
@@ -25,7 +26,7 @@ $page_content = function()
     </div>
 
     <div class="avatar">
-        <img src="/assets/images/avatars/davidhunter_illustration_transparent_1.png">
+        <img src="<?php echo $images_url; ?>/avatars/davidhunter_illustration_transparent_1.png">
     </div>
 </div>
 
