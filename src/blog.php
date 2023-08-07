@@ -3,7 +3,7 @@
 $current_page = "blog";
 $page_title = "Blog";
 
-$footer_javascripts[] = "/assets/js/blog-search.js";
+$footer_javascripts['blog-search'] = "/assets/js/blog-search.js";
 
 if( ! function_exists( "get_blog_entries" ) )
 {

@@ -15,12 +15,10 @@ $videos_url = "https://videos.staticly.ict.rocks";
 
 $webfonts_url = "https://webfonts.staticly.ict.rocks";
 
-$stylesheets = array();
-$stylesheets[] = $webfonts_url . "/poppins/poppins.css";
-$stylesheets[] = "/assets/css/stylesheet.css";
+$stylesheets['poppins_webfont_stylesheet'] = $webfonts_url . "/poppins/poppins.css";
+$stylesheets['stylesheet'] = "/assets/css/stylesheet.css";
 
-//$footer_javascripts = array();
-$footer_javascripts[] = "/assets/js/anti-email-harvesting.js";
-$footer_javascripts[] = "/assets/js/toggle-color-scheme.js";
+$footer_javascripts['anti-email-harvesting'] = "/assets/js/anti-email-harvesting.js";
+$footer_javascripts['toggle-color-scheme'] = "/assets/js/toggle-color-scheme.js";
 
 $blog_datetime_format = "jS F Y \a\\t g:i a";
