@@ -11,11 +11,13 @@ $article_content = function()
     include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "config.php";
 ?>
 
-<video class="video" controls>
+<video class="video" poster="<?php echo $images_url; ?>/videos/SleeplessNight-Thumb.png" preload="none" controls>
     <source src="<?php echo $videos_url; ?>/davidhunter/sleepless-night-a-short-film.mp4" type="video/mp4">
 </video>
 
 <p>This is my very first short film I produced entirely by myself in my bedroom. Hopefully you like it.</p>
+
+<p>Duration: 2 minutes and 5 seconds</p>
 
 <?php
 };

@@ -15,7 +15,9 @@ $article_content = function()
 
 <p>This was one of my proudest moments, and after over a decade later, I want to share and remember this moment that luckily enough was caught on camera.</p>
 
-<video class="video" controls>
+<p>Duration: 1 minute and 39 seconds</p>
+
+<video class="video" poster="<?php echo $images_url; ?>/videos/Gradulation2012-ProVersion-Thumb.png" preload="none" controls>
     <source src="<?php echo $videos_url; ?>/davidhunter/kilmarnockcollege_graduation_2012.mp4" type="video/mp4">
 </video>
 
