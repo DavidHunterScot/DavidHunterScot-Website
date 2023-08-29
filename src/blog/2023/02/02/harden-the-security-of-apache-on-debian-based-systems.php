@@ -36,7 +36,7 @@ ServerSignature Off
     <b>ServerSignature:</b> set this to <code>Off</code> so that the version information is hidden.
 </p>
 
-<p><b>Step 3:</b> Save the file and restart Apache: <code>sudo systemctl apache2 restart</code></p>
+<p><b>Step 3:</b> Save the file and restart Apache: <code>sudo systemctl restart apache2</code></p>
 
 <h3>Disable Directory Index Listing</h3>
 
@@ -55,7 +55,7 @@ ServerSignature Off
 <p><b>Step 3:</b> If an <code>Option</code> exists for <code>Indexes</code>, ensure it is set to <code>-Indexes</code>. The minus negates it to ensure it is disabled. Apache will complain if there are other options without a + or - before them, so either remove the other options or ensure they have a + or - accordingly.</p>
 
 <p><b>Step 4:</b> Save the file and restart Apache.</p>
-<p><code>sudo systemctl apache2 restart</code></p>
+<p><code>sudo systemctl restart apache2</code></p>
 
 <p><b>Step 5:</b> Create an empty directory on your site, attempt to visit it and you should now get the default Apache error 403 Forbidden message. Also if you followed the previous section, the Apache version should be hidden from this page too. You can delete that empty directory if you wish now, as it was only for testing.</p>
 
@@ -72,7 +72,7 @@ ServerSignature Off
 <p><code>FileETag None</code></p>
 
 <p><b>Step 3:</b> Save the file and restart Apache.</p>
-<p><code>sudo systemctl apache2 restart</code></p>
+<p><code>sudo systemctl restart apache2</code></p>
 
 <h3>Run Apache form a Non-Privileged Account</h3>
 
@@ -108,7 +108,7 @@ export APACHE_RUN_GROUP=apache
 <p>Find the export lines shown above and change the values to the user name and group you created earlier.</p>
 
 <p><b>Step 6:</b> Save the file and restart Apache.</p>
-<p><code>sudo systemctl apache2 restart</code></p>
+<p><code>sudo systemctl restart apache2</code></p>
 
 <h3>Limit HTTP Request Methods</h3>
 
@@ -128,7 +128,7 @@ export APACHE_RUN_GROUP=apache
 <p>Change <code>GET POST HEAD</code> to the request methods you need. In most cases, these three will be fine.</p>
 
 <p><b>Step 3:</b> Save the file and restart Apache.</p>
-<p><code>sudo systemctl apache2 restart</code></p>
+<p><code>sudo systemctl restart apache2</code></p>
 
 <h3>Conclusion</h3>
 
