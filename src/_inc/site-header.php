@@ -8,7 +8,7 @@
         <nav>
             <a href="/"<?php if( isset( $current_page ) && $current_page == "home" ): ?> class="current"<?php endif; ?>>Home</a>
             <a href="/blog/"<?php if( isset( $current_page ) && $current_page == "blog" ): ?> class="current"<?php endif; ?>>Blog</a>
-            <a href="https://projects.davidhunter.ict.rocks/" target="_blank">Projects</a>
+            <a href="/projects"<?php if( isset( $current_page ) && $current_page == "projects" ): ?> class="current"<?php endif; ?>>Projects</a>
         </nav>
     </div>
 </header>
