@@ -18,7 +18,7 @@ $page_content = function()
         (
             "title" => "Personal Website",
             "description" => "It is all about me",
-            "url" => "https://www.davidhunter.ict.rocks",
+            "url" => "https://davidhunter.scot",
             "image" => $images_url . "/avatars/davidhunter_illustration_transparent_1.png",
             "color" => "#333",
         ),
@@ -26,9 +26,17 @@ $page_content = function()
         (
             "title" => "StaticPHP",
             "description" => "A Static Site Generator that turns PHP files into HTML files.",
-            "url" => "https://www.staticphp.ict.rocks",
+            "url" => "https://staticphp.io",
             "image" => $images_url . "/logos/StaticPHP-Promo1.png",
             "color" => "#7A86B8",
+        ),
+        array
+        (
+            "title" => "Staticly",
+            "description" => "The essential repository for Front End Web Developers.",
+            "url" => "https://staticly.cc",
+            "image" => "",
+            "color" => "#4A9CB3",
         ),
         array
         (
@@ -37,14 +45,6 @@ $page_content = function()
             "url" => "https://networktools.ict.rocks",
             "image" => "",
             "color" => "#ffffff",
-        ),
-        array
-        (
-            "title" => "Staticly",
-            "description" => "The essential repository for Front End Web Developers.",
-            "url" => "https://www.staticly.ict.rocks",
-            "image" => "",
-            "color" => "#4A9CB3",
         ),
         array
         (
