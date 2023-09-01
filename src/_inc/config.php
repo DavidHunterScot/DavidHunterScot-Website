@@ -13,7 +13,7 @@ $avatars_url = $images_url . "/avatars";
 
 $videos_url = "https://videos.storage.ict.rocks";
 
-$webfonts_url = "https://webfonts.staticly.cc";
+$webfonts_url = "https://staticly.cc/webfonts";
 
 $stylesheets['poppins_webfont_stylesheet'] = $webfonts_url . "/poppins/poppins.css";
 $stylesheets['stylesheet'] = "/assets/css/stylesheet.css";
