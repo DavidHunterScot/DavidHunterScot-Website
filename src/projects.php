@@ -62,18 +62,25 @@ $page_content = function()
 
             <?php
 
-            foreach( $projects as $project )
+            for( $p = 0; $p < count( $projects ); $p++ )
             {
+                $project = $projects[ $p ];
             ?>
 
             <div class="project">
+                <?php if( $p % 2 === 0 ): ?>
+                    <div class="image left hide-mobile" style="background-image: url( '<?php echo $project['image']; ?>' ), linear-gradient( var( --angle-alt ), <?php if( isset( $project['color'] ) && $project['color'] ) echo $project['color']; else echo "#262626"; ?> 0%, var( --color-background-alt ) 50% );">&nbsp;</div>
+                <?php endif; ?>
                 <div class="info">
                     <div class="title"><?php echo $project['title']; ?></div>
                     <div class="description"><?php echo $project['description']; ?></div>
                     <div class="url"><a href="<?php echo $project['url']; ?>" target="_blank"><?php echo $project['url']; ?></a></div>
                 </div>
-
-                <div class="image" style="background-image: url( '<?php echo $project['image']; ?>' ), linear-gradient( var( --angle ), <?php if( isset( $project['color'] ) && $project['color'] ) echo $project['color']; else echo "#262626"; ?> 0%, var( --color-background-alt ) 50% );">&nbsp;</div>
+                <?php if( $p % 2 !== 0 ): ?>
+                    <div class="image right" style="background-image: url( '<?php echo $project['image']; ?>' ), linear-gradient( var( --angle ), <?php if( isset( $project['color'] ) && $project['color'] ) echo $project['color']; else echo "#262626"; ?> 0%, var( --color-background-alt ) 50% );">&nbsp;</div>
+                <?php else: ?>
+                    <div class="image hide-desktop" style="background-image: url( '<?php echo $project['image']; ?>' ), linear-gradient( var( --angle ), <?php if( isset( $project['color'] ) && $project['color'] ) echo $project['color']; else echo "#262626"; ?> 0%, var( --color-background-alt ) 50% );">&nbsp;</div>
+                <?php endif; ?>
             </div>
 
             <?php

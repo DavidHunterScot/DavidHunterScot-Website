@@ -443,10 +443,19 @@ code.highlight
 .projects .project .image
 {
     --angle: 0deg;
+    --angle-alt: 0deg;
     background-position: center;
     background-repeat: no-repeat;
     height: 25vw;
     border-radius: 0 0 0.4rem 0.4rem;
+}
+
+@media (max-width:800px)
+{
+  .hide-mobile
+  {
+    display: none;
+  }
 }
 
 @media (min-width:800px)
@@ -529,9 +538,24 @@ code.highlight
   .projects .project .image
   {
       --angle: 270deg;
+      --angle-alt: -270deg;
       width: 40%;
       height: auto;
-      border-radius: 0 0.4rem 0.4rem 0;
+  }
+
+  .projects .project .image.left
+  {
+    border-radius: 0.4rem 0 0 0.4rem;
+  }
+
+  .projects .project .image.right
+  {
+    border-radius: 0 0.4rem 0.4rem 0;
+  }
+
+  .hide-desktop
+  {
+    display: none;
   }
 }
 
