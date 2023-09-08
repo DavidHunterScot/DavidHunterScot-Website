@@ -50,7 +50,7 @@ $page_content = function()
         (
             "title" => "DAH5",
             "description" => "The website that started it all, originally launched back in April 2005!",
-            "url" => "https://www.dah5.com",
+            "url" => "https://www.dah5.me.uk",
             "image" => $images_url . "/logos/dah5-logo-2022.svg",
             "color" => "rgb( 38, 38, 38 )",
         ),
