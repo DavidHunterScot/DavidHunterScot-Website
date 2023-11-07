@@ -20,13 +20,13 @@ xhttp.onload = function()
 
             for( var r = 0; r < json_result.length; r++ )
             {
-                if( ( json_result[ r ].title.toLowerCase() + json_result[ r ].description.toLowerCase() + json_result[ r ].datetime ).includes( searchbox.value.toLowerCase() ) )
+                if( ( json_result[ r ].metadata.article_title.toLowerCase() + json_result[ r ].metadata.article_description.toLowerCase() + json_result[ r ].metadata.article_date + json_result[ r ].metadata.article_time ).includes( searchbox.value.toLowerCase() ) )
                 {
-                    results.push( json_result[ r ] );
+                    results.push( json_result[ r ].metadata );
                 }
             }
 
-            var section_title = document.getElementsByClassName( "section-title" )[0];
+            var section_title = document.getElementsByClassName( "blog-title" )[0];
 
             if( searchbox.value.trim() != "" )
                 section_title.innerHTML = "\"" + searchbox.value + "\" Blog Entries";
@@ -42,14 +42,13 @@ xhttp.onload = function()
 
             for( var r = 0; r < results.length; r++ )
             {
-                var avatar_image = results[ r ].avatar_url ? '<img src="' + results[ r ].avatar_url + '" alt="' + results[ r ].author + '\'s Avatar" class="avatar">' : '';
                 blog_entries.innerHTML += xhttp1.responseText
-                .replace( "TITLE", results[ r ].title )
-                .replace( "AVATAR IMAGE", avatar_image )
-                .replace( "AUTHOR NAME", results[ r ].author )
-                .replace( "DATETIME", results[ r ].datetime )
-                .replace( "DESCRIPTION", results[ r ].description )
-                .replace( "PERMALINK", results[ r ].permalink );
+                .replace( "TITLE", results[ r ].article_title )
+                .replace( "AUTHOR NAME", results[ r ].article_author )
+                .replace( "DATE", results[ r ].article_date )
+                .replace( "TIME", results[ r ].article_time )
+                .replace( "DESCRIPTION", results[ r ].article_description )
+                .replace( "PERMALINK", results[ r ].uri );
             }
 
             return false;

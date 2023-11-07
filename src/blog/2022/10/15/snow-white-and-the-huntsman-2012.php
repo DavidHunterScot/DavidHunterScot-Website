@@ -1,14 +1,12 @@
-<?php
-
-$article_title = "Movie: Snow White and the Huntsman (2012)";
-$article_description = "Just watched a movie called Snow White and the Huntsman released a decade ago.";
-$article_author = "David Hunter";
-$article_date = "2022-10-15";
-$article_time = "02:42";
-
-$article_content = function()
-{
-?>
+---
+article_title: Movie: Snow White and the Huntsman (2012)
+article_description: Just watched a movie called Snow White and the Huntsman released a decade ago.
+article_author: David Hunter
+article_date: 2022-10-15
+article_time: 02:42
+layout: src/_inc/base.php
+current_page: blog
+---
 
 <p>Oh wow, what an amazing movie!</p>
 
@@ -17,9 +15,3 @@ $article_content = function()
 <p>Literally, I forgot how the story goes, and I legit felt like Snow White died, especially when she was kissed and that did absolutely nothing. I shed a tear.</p>
 
 <p>I won't say much more other than you should totally watch this movie!</p>
-
-<?php
-};
-
-if( isset( $path_to_input_file ) && basename( $path_to_input_file ) == basename( __FILE__ ) )
-    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "entry.php";

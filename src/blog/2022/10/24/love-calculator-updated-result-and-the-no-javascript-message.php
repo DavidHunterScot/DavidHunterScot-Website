@@ -1,14 +1,12 @@
-<?php
-
-$article_title = "Love Calculator: Updated Result and the No JavaScript message";
-$article_description = "A small but still important update.";
-$article_author = "David Hunter";
-$article_date = "2022-10-24";
-$article_time = "01:14";
-
-$article_content = function()
-{
-?>
+---
+article_title: Love Calculator: Updated Result and the No JavaScript message
+article_description: A small but still important update.
+article_author: David Hunter
+article_date: 2022-10-24
+article_time: 01:14
+layout: src/_inc/base.php
+current_page: blog
+---
 
 <h2>The result is now rounded to the nearest whole number.</h2>
 
@@ -35,9 +33,3 @@ $article_content = function()
 <h2>Conclusion</h2>
 
 <p>This was a relatively small update, but still important. Let me know your feedback.</p>
-
-<?php
-};
-
-if( isset( $path_to_input_file ) && basename( $path_to_input_file ) == basename( __FILE__ ) )
-    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "entry.php";

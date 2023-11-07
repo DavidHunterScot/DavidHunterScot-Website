@@ -1,14 +1,12 @@
-<?php
-
-$article_title = "Introducing DAH5 Games";
-$article_description = "My brand new games website is now live!";
-$article_author = "David Hunter";
-$article_date = "2022-10-20";
-$article_time = "01:00";
-
-$article_content = function()
-{
-?>
+---
+article_title: Introducing DAH5 Games
+article_description: My brand new games website is now live!
+article_author: David Hunter
+article_date: 2022-10-20
+article_time: 01:00
+layout: src/_inc/base.php
+current_page: blog
+---
 
 <p>My brand new games website is now live!</p>
 
@@ -33,9 +31,3 @@ $article_content = function()
 <p>The above mentioned Love Calculator game, at the time of writing, is currently the only game available to play, however, I do plan to come up with some more small simple games, and maybe even some bigger fancier games.</p>
 
 <p>Keep an eye on my blog so you know when I launch new games or update my current ones.</p>
-
-<?php
-};
-
-if( isset( $path_to_input_file ) && basename( $path_to_input_file ) == basename( __FILE__ ) )
-    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "entry.php";

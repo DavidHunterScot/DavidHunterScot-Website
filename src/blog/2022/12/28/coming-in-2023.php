@@ -1,14 +1,12 @@
-<?php
-
-$article_title = "Coming in 2023...";
-$article_description = "In this blog article, I will lay out what I hope the new year will bring.";
-$article_author = "David Hunter";
-$article_date = "2022-12-28";
-$article_time = "19:00";
-
-$article_content = function()
-{
-?>
+---
+article_title: Coming in 2023...
+article_description: In this blog article, I will lay out what I hope the new year will bring.
+article_author: David Hunter
+article_date: 2022-12-28
+article_time: 19:00
+layout: src/_inc/base.php
+current_page: blog
+---
 
 <p>In this blog article, I will lay out what I hope the new year will bring.</p>
 
@@ -35,9 +33,3 @@ $article_content = function()
 <p>Regardless of what happens, all I hope for is good health for everyone and for things to go well. Hopefully things turn out as I plan.</p>
 
 <p>Keep an eye on this blog for more updates on how things are going. Take care.</p>
-
-<?php
-};
-
-if( isset( $path_to_input_file ) && basename( $path_to_input_file ) == basename( __FILE__ ) )
-    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "entry.php";

@@ -1,11 +1,8 @@
-<?php
-
-$current_page = "staticphp";
-$page_title = "StaticPHP";
-
-$page_content = function()
-{
-?>
+---
+current_page: staticphp
+page_title: StaticPHP
+layout: src/_inc/base.php
+---
 
 <h2>Welcome to StaticPHP!</h2>
 <p><i>A <b>static site</b> generator written in <b>PHP</b>.</i></p>
@@ -23,8 +20,3 @@ $page_content = function()
 <p>Most web servers will likely have PHP installed, but for sites that do not expect any user input (e.g. login) and remain the same until the developer makes changes, running PHP code per request is unneccessary.</p>
 <p>If you manage the server you deploy to yourself, then you don't even need PHP at all, you can skip installing it and then that is one less thing to keep up-to-date with latest security patches, and one less thing to manage the configuration of, making for an instantly more secure deployment environment.</p>
 <p>Have PHP on your local machine or separate build server to build your site with StaticPHP and then PHP is no longer needed.</p>
-
-<?php
-};
-
-include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "base.php";

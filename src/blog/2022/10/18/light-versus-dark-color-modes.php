@@ -1,14 +1,12 @@
-<?php
-
-$article_title = "Light Versus Dark Color Modes";
-$article_description = "Learn the big deal between light versus dark color modes, and why you might want to care about it.";
-$article_author = "David Hunter";
-$article_date = "2022-10-18";
-$article_time = "18:05";
-
-$article_content = function()
-{
-?>
+---
+article_title: Light Versus Dark Color Modes
+article_description: Learn the big deal between light versus dark color modes, and why you might want to care about it.
+article_author: David Hunter
+article_date: 2022-10-18
+article_time: 18:05
+layout: src/_inc/base.php
+current_page: blog
+---
 
 <p>Basicly, it is a personal preference of whether you want to see more white and colors closer to white, or more black and colors closer to black.</p>
 
@@ -49,9 +47,3 @@ $article_content = function()
 <p>Try changing your device's display settings, and switch it to the opposite mode to what you have now, then return to this article. It will change automatically depending on your preference, giving you a real example of how other things could be affected by your preference.</p>
 
 <p>Feel free to get in touch to let me know your thoughts. Thank you so much for reading.</p>
-
-<?php
-};
-
-if( isset( $path_to_input_file ) && basename( $path_to_input_file ) == basename( __FILE__ ) )
-    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "entry.php";

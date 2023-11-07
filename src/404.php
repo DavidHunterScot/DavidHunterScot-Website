@@ -1,11 +1,8 @@
-<?php
-
-$page_title = 'Not Found (404)';
-$friendly_urls = false;
-
-$page_content = function()
-{
-?>
+---
+page_title: Not Found (404)
+friendly_urls: false
+layout: src/_inc/base.php
+---
 
 <h1>Not Found (404)</h1>
 
@@ -18,8 +15,3 @@ $page_content = function()
 </ul>
 
 <p>Feel free to get in touch if you believe there is an issue with this website, or have any further questions or concerns. Details are available on the <a href="/">home</a> page.</p>
-
-<?php
-};
-
-include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "base.php";

@@ -1,14 +1,12 @@
-<?php
-
-$article_title = "Recent Updates to DAH5";
-$article_date = "2022-10-23";
-$article_time = "01:30";
-$article_description = "Check out these updates I have made to the DAH5 website.";
-$article_author = "David Hunter";
-
-$article_content = function()
-{
-?>
+---
+article_title: Recent Updates to DAH5
+article_description: Check out these updates I have made to the DAH5 website.
+article_author: David Hunter
+article_date: 2022-10-23
+article_time: 01:30
+layout: src/_inc/base.php
+current_page: blog
+---
 
 <p>I have been working hard on new updates to the DAH5 website, also known as my oldest and longest standing website, originally lauched back in April 2005.</p>
 
@@ -86,9 +84,3 @@ $article_content = function()
 <p>Thank you for checking out this update article, and that going forward I hope there will be plenty more updates to see.</p>
 
 <p>Until next time, take care.</p>
-
-<?php
-};
-
-if( isset( $path_to_input_file ) && basename( $path_to_input_file ) == basename( __FILE__ ) )
-    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "entry.php";

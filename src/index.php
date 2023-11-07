@@ -1,11 +1,7 @@
-<?php
-
-$current_page = "home";
-
-$page_content = function()
-{
-    include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "config.php";
-?>
+---
+current_page: home
+layout: src/_inc/base.php
+---
 
 <div class="home_hero">
     <div class="info">
@@ -26,11 +22,6 @@ $page_content = function()
     </div>
 
     <div class="avatar">
-        <img src="<?php echo $images_url; ?>/avatars/davidhunter_illustration_transparent_1.png">
+        <img src="--- metadata.images_url ---/avatars/davidhunter_illustration_transparent_1.png">
     </div>
 </div>
-
-<?php
-};
-
-include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "base.php";

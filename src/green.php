@@ -1,11 +1,7 @@
-<?php
-
-$current_page = "green";
-$page_title = "Powered by 100% Green and Renewable Energy";
-
-$page_content = function()
-{
-?>
+---
+current_page: green
+page_title: Powered by 100% Green and Renewable Energy
+---
 
 <h2>Powered by 100% Green and Renewable Energy</h2>
 <p>As humans, we have not always been good to our planet when we discovered different methods to power various things. If we don't change our ways, we will continue to damage the planet that gives us life. We will continue to pass on a bad legacy to our decendants, which we will in turn regret.</p>
@@ -19,8 +15,3 @@ $page_content = function()
 </ul>
 
 <p>Over time, I will continue to do these and more to make our planet a better place for everyone today and in our future, but I cannot do it alone. Please help me by making small changes to what you do, and together we will make a world that we and our future decendants can be proud of.</p>
-
-<?php
-};
-
-include __DIR__ . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "base.php";

@@ -1,14 +1,12 @@
-<?php
-
-$article_title = "CHRISTMAS 2022";
-$article_description = "Check out what I got this year.";
-$article_author = "David Hunter";
-$article_date = "2022-12-27";
-$article_time = "14:30";
-
-$article_content = function()
-{
-?>
+---
+article_title: CHRISTMAS 2022
+article_description: Check out what I got this year.
+article_author: David Hunter
+article_date: 2022-12-27
+article_time: 14:30
+layout: src/_inc/base.php
+current_page: blog
+---
 
 <p>Hey all, I hope you are having a good festive period surrounded by those that matter to you, and that you are all warm and healthy.</p>
 
@@ -96,9 +94,3 @@ $article_content = function()
 <p>The most important thing to me about this Christmas, was not the gifts I got myself or received from others, but rather having my family and relatives around me and able to spend time with all of them. Today is our planned annual family get together. This is what makes Christmas so magical.</p>
 
 <p>Take care everyone, and thank you for stopping by and reading this blog article.</p>
-
-<?php
-};
-
-if( isset( $path_to_input_file ) && basename( $path_to_input_file ) == basename( __FILE__ ) )
-    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "entry.php";

@@ -1,15 +1,12 @@
-<?php
-
-$article_title = "Harden the Security of Apache on Debian based Systems";
-$article_description = "Apache is the software used to run a web server, but default installation isn't that secure. Let's harden it!";
-$article_author = "David Hunter";
-$article_date = "2023-02-02";
-$article_time = "21:21";
-
-$article_content = function()
-{
-    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "config.php";
-?>
+---
+article_title: Harden the Security of Apache on Debian based Systems
+article_description: Apache is the software used to run a web server, but default installation isn't that secure. Let's harden it!
+article_author: David Hunter
+article_date: 2023-02-02
+article_time: 21:21
+layout: src/_inc/base.php
+current_page: blog
+---
 
 <p>Apache is the software used to run a web server, but default installation isn't that secure. Let's harden it!</p>
 
@@ -89,7 +86,7 @@ sudo useradd -g apache apache
 <p>Remember to swap out <code>apache</code> for the user name you chose if you decided on a different one.</p>
 
 <p><b>Step 3:</b> Find your Apache installation directory.</p>
-<p><code>which apache2</code></p>
+<p><code>sudo which apache2</code></p>
 
 <p><b>Step 4:</b> Change ownership of the Apache installation directory to that of the new user and group you just created.</p>
 <p><code>sudo chown -R apache:apache /path/to/apache</code></p>
@@ -133,9 +130,3 @@ export APACHE_RUN_GROUP=apache
 <h3>Conclusion</h3>
 
 <p>That is about all I have for you for now. I hope it was useful to you. Please check back in the future to remind yourself of these steps and in case I happen to add more.</p>
-
-<?php
-};
-
-if( isset( $path_to_input_file ) && basename( $path_to_input_file ) == basename( __FILE__ ) )
-    include __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "_inc" . DIRECTORY_SEPARATOR . "entry.php";
