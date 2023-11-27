@@ -8,10 +8,9 @@ static_site_generator_url: https://staticphp.io
 
 website_source_code_url: https://github.com/DavidHunterScot/Website
 
-images_url: https://images.staticly.cc
+images_url: /assets/images
 videos_url: https://videos.staticly.cc
-webfonts_url: https://webfonts.staticly.cc
-w3css_url: https://w3css.staticly.cc
+webfonts_url: /assets/webfonts
 
 content_placeholder: {{ content }}
 ---
