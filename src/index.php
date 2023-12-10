@@ -14,7 +14,7 @@ layout: src/_inc/base.php
 
         <p>Just send me an email, and I will respond soon.</p>
 
-        <p><span class="email_address">david [dot] hunter [at] themailbox [dot] io</span></p>
+        <p><span class="email_address">david [dot] hunter [at] echoverse [dot] cc</span></p>
 
         <p>One more thing, if you're not doing much else right now, maybe you could check out my <a href="/blog">blog</a>?</p>
 

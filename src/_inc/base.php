@@ -3,9 +3,6 @@ site_title: David Hunter
 site_tagline: Internet Services Specialist
 site_author: David Hunter
 
-static_site_generator: StaticPHP
-static_site_generator_url: https://staticphp.io
-
 website_source_code_url: https://github.com/DavidHunterScot/Website
 
 images_url: /assets/images
