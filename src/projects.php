@@ -30,7 +30,7 @@ layout: src/_inc/base.php
         (
             "title" => "Staticly",
             "description" => "The essential repository for Front End Web Developers.",
-            "url" => "https://staticly.cc",
+            "url" => "https://staticly.echoverse.cc",
             "image" => "",
             "color" => "#4A9CB3",
         ),
