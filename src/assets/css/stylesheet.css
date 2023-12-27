@@ -450,6 +450,18 @@ code.highlight
     border-radius: 0 0 0.4rem 0.4rem;
 }
 
+pre code
+{
+  display: block;
+}
+
+code
+{
+  background-color: var( --color-background-alt );
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 @media (max-width:800px)
 {
   .hide-mobile

@@ -26,8 +26,7 @@ current_page: blog
 
 <p>Firstly though, you must change the parts at the top of the script to match your situation.</p>
 
-<code><pre>
-git filter-branch --env-filter '
+<pre><code>git filter-branch --env-filter '
 OLD_EMAIL="your.name@olddomain.tld"
 NEW_NAME="Your Updated Name"
 NEW_EMAIL="your.name@newdomain.tld"
@@ -43,8 +42,7 @@ then
     export GIT_AUTHOR_NAME="$NEW_NAME"
     export GIT_AUTHOR_EMAIL="$NEW_EMAIL"
 fi
-' -- tag-name-filter cat -- --branches --tags
-</pre></code>
+' -- tag-name-filter cat -- --branches --tags</code></pre>
 
 <p>Copy the above into a text editor of your choice. Modify the details at the top, and then copy and paste it into your terminal / command prompt and hit enter to run the script.</p>
 

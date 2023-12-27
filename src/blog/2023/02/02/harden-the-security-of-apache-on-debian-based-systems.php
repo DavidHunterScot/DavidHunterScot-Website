@@ -22,10 +22,8 @@ current_page: blog
 <p><code>sudo nano /etc/apache2/apache2.conf</code></p>
 <p><b>Step 2:</b> Go down to the bottom of the file, add a comment so you know this is your modification, then add the following lines.</p>
 
-<code><pre>
-ServerTokens Prod
-ServerSignature Off
-</pre></code>
+<pre><code>ServerTokens Prod
+ServerSignature Off</code></pre>
 
 <p>
     <b>ServerTokens:</b> set this to <code>Prod</code> so that the header is production only, therefore only displaying Apache.
@@ -43,11 +41,9 @@ ServerSignature Off
 <p><code>sudo nano /etc/apache2/apache2.conf</code></p>
 <p><b>Step 2:</b> Look for the Directory directives and find the one that matches the path for the <code>www</code> directory. It should look like the following.</p>
 
-<code><pre>
-&lt;Directory /var/www/&gt;
+<pre><code>&lt;Directory /var/www/&gt;
     # ...
-&lt;/Directory&gt;
-</pre></code>
+&lt;/Directory&gt;</code></pre>
 
 <p><b>Step 3:</b> If an <code>Option</code> exists for <code>Indexes</code>, ensure it is set to <code>-Indexes</code>. The minus negates it to ensure it is disabled. Apache will complain if there are other options without a + or - before them, so either remove the other options or ensure they have a + or - accordingly.</p>
 
@@ -78,10 +74,8 @@ ServerSignature Off
 <p><b>Step 1:</b> Decide on the name of the user that apache will run as. For this tutorial, I will use <code>apache</code>.</p>
 <p><b>Step 2:</b> Add a user and group called <code>apache</code> with the following commands.</p>
 
-<code><pre>
-sudo groupadd apache
-sudo useradd -g apache apache
-</pre></code>
+<pre><code>sudo groupadd apache
+sudo useradd -g apache apache</code></pre>
 
 <p>Remember to swap out <code>apache</code> for the user name you chose if you decided on a different one.</p>
 
@@ -95,12 +89,10 @@ sudo useradd -g apache apache
 
 <p><b>Step 5:</b> Modify the Apache Environment Variables file to set the new user and group.</p>
 
-<code><pre>
-sudo nano /etc/apache2/envvars
+<pre><code>sudo nano /etc/apache2/envvars
 
 export APACHE_RUN_USER=apache
-export APACHE_RUN_GROUP=apache
-</pre></code>
+export APACHE_RUN_GROUP=apache</code></pre>
 
 <p>Find the export lines shown above and change the values to the user name and group you created earlier.</p>
 
@@ -116,11 +108,9 @@ export APACHE_RUN_GROUP=apache
 
 <p><b>Step 2:</b> Find the root Directory section, and inside that add the following.</p>
 
-<code><pre>
-&lt;LimitExcept GET POST HEAD&gt;
+<pre><code>&lt;LimitExcept GET POST HEAD&gt;
     Deny from All
-&lt;/LimitExcept&gt;
-</pre></code>
+&lt;/LimitExcept&gt;</code></pre>
 
 <p>Change <code>GET POST HEAD</code> to the request methods you need. In most cases, these three will be fine.</p>
 
