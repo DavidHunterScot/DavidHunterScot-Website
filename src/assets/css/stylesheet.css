@@ -453,6 +453,7 @@ code.highlight
 pre code
 {
   display: block;
+  white-space: unset;
 }
 
 code
@@ -460,6 +461,12 @@ code
   background-color: var( --color-background-alt );
   padding: 0.5rem;
   border-radius: 0.5rem;
+  overflow-x: auto;
+  word-break: keep-all;
+  white-space: nowrap;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @media (max-width:800px)
