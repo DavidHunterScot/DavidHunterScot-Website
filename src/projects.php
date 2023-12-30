@@ -14,7 +14,7 @@ layout: src/_inc/base.php
         (
             "title" => "Personal Website",
             "description" => "It is all about me",
-            "url" => "https://davidhunter.echoverse.cc",
+            "url" => "https://davidhunter.scot",
             "image" => "--- metadata.images_url ---/avatars/davidhunter_illustration_transparent_1.png",
             "color" => "#333",
         ),
@@ -22,7 +22,7 @@ layout: src/_inc/base.php
         (
             "title" => "StaticPHP",
             "description" => "A Static Site Generator that turns PHP files into HTML files.",
-            "url" => "https://staticphp.echoverse.cc",
+            "url" => "https://staticphp.io",
             "image" => "--- metadata.images_url ---/logos/StaticPHP-Promo1.png",
             "color" => "#7A86B8",
         ),
