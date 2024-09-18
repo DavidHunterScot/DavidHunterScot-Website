@@ -6,7 +6,7 @@ site_author: David Hunter
 website_source_code_url: https://github.com/DavidHunterScot/Website
 
 images_url: /assets/images
-videos_url: https://videos.staticly.echoverse.cc
+videos_url: https://assets.david-hunter.net/videos
 webfonts_url: /assets/webfonts
 
 content_placeholder: {{ content }}
