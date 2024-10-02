@@ -22,7 +22,7 @@ $projects = array
     (
         "title" => "StaticPHP",
         "description" => "A Static Site Generator that turns PHP files into HTML files.",
-        "url" => "https://staticphp.io",
+        "url" => "https://staticphp.softwayr.io",
         "target" => "_blank",
         "image" => "/assets/images/logos/StaticPHP-Promo1.png",
         "color" => "#7A86B8",
