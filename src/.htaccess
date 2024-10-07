@@ -3,6 +3,7 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
     RewriteEngine on
 
-    RewriteCond %{env:HTTPS} !on
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=307,END]
+    RewriteCond %{SERVER_PORT} ^80$ [OR]
+	RewriteCond %{HTTP_HOST} !^david-hunter.net$
+    RewriteRule ^(.*)$ https://david-hunter.net/$1 [R=307,END]
 </IfModule>
