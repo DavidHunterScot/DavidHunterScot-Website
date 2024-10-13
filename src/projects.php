@@ -39,7 +39,7 @@ $projects = array
     (
         "title" => "Network Tools",
         "description" => "Web based tools related to computer networks.",
-        "url" => "https://networktools.ict.rocks",
+        "url" => "https://networktools.webaddr.net",
         "target" => "_blank",
         "image" => "",
         "color" => "#ffffff",
