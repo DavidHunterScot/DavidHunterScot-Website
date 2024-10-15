@@ -31,7 +31,7 @@ $projects = array
     (
         "title" => "Staticly",
         "description" => "The essential repository for Front End Web Developers.",
-        "url" => "https://www.dah5.me.uk/staticly",
+        "url" => "https://www.dah5.com/staticly",
         "image" => "",
         "color" => "#4A9CB3",
     ),
@@ -48,7 +48,7 @@ $projects = array
     (
         "title" => "DAH5",
         "description" => "The website that started it all, originally launched back in April 2005!",
-        "url" => "https://www.dah5.me.uk",
+        "url" => "https://www.dah5.com",
         "image" => "/assets/images/logos/dah5-logo-2024-alternate-150x35.png",
         "color" => "rgb( 38, 38, 38 )",
     ),
