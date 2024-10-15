@@ -14,7 +14,7 @@ $projects = array
     (
         "title" => "Personal Website",
         "description" => "It is all about me",
-        "url" => "https://david-hunter.net",
+        "url" => "https://davidhunter.webaddr.net",
         "image" => "/assets/images/avatars/davidhunter_illustration_transparent_1.png",
         "color" => "#333",
     ),
