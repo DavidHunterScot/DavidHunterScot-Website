@@ -14,7 +14,7 @@ $projects = array
     (
         "title" => "Personal Website",
         "description" => "It is all about me",
-        "url" => "https://davidhunter.webaddr.net",
+        "url" => "https://weburl.net/davidhunter",
         "image" => "/assets/images/avatars/davidhunter_illustration_transparent_1.png",
         "color" => "#333",
     ),
@@ -22,7 +22,7 @@ $projects = array
     (
         "title" => "StaticPHP",
         "description" => "A Static Site Generator that turns PHP files into HTML files.",
-        "url" => "https://staticphp.softwayr.net",
+        "url" => "https://weburl.net/staticphp",
         "target" => "_blank",
         "image" => "/assets/images/logos/StaticPHP-Promo1.png",
         "color" => "#7A86B8",
@@ -31,7 +31,7 @@ $projects = array
     (
         "title" => "Staticly",
         "description" => "The essential repository for Front End Web Developers.",
-        "url" => "https://www.dah5.com/staticly",
+        "url" => "https://weburl.net/staticly",
         "target" => "_blank",
         "image" => "",
         "color" => "#4A9CB3",
@@ -40,7 +40,7 @@ $projects = array
     (
         "title" => "Network Tools",
         "description" => "Web based tools related to computer networks.",
-        "url" => "https://networktools.webaddr.net",
+        "url" => "https://weburl.net/networktools",
         "target" => "_blank",
         "image" => "",
         "color" => "#ffffff",
@@ -49,7 +49,7 @@ $projects = array
     (
         "title" => "DAH5",
         "description" => "The website that started it all, originally launched back in April 2005!",
-        "url" => "https://www.dah5.com",
+        "url" => "https://weburl.net/dah5",
         "target" => "_blank",
         "image" => "/assets/images/logos/dah5-logo-2024-alternate-150x35.png",
         "color" => "rgb( 38, 38, 38 )",
