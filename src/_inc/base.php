@@ -7,7 +7,7 @@ website_source_code_url: https://github.com/DavidHunterScot/Website
 
 images_url: https://assets.weburl.net/images
 videos_url: https://assets.weburl.net/videos
-webfonts_url: https://assets.weburl.net/webfonts
+webfonts_url: /assets/webfonts
 
 content_placeholder: {{ content }}
 ---
