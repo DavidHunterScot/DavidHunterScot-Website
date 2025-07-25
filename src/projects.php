@@ -15,7 +15,7 @@ $projects = array
         "title" => "Personal Website",
         "description" => "It is all about me",
         "url" => "https://weburl.net/davidhunter",
-        "image" => "/assets/images/avatars/davidhunter_illustration_transparent_1.png",
+        "image" => "--- metadata.images_url ---/avatars/davidhunter_illustration_transparent_1.png",
         "color" => "#333",
     ),
     array
@@ -24,7 +24,7 @@ $projects = array
         "description" => "A Static Site Generator that turns PHP files into HTML files.",
         "url" => "https://weburl.net/staticphp",
         "target" => "_blank",
-        "image" => "/assets/images/logos/StaticPHP-Promo1.png",
+        "image" => "--- metadata.images_url ---/logos/StaticPHP-Promo1.png",
         "color" => "#7A86B8",
     ),
     array
@@ -51,7 +51,7 @@ $projects = array
         "description" => "The website that started it all, originally launched back in April 2005!",
         "url" => "https://weburl.net/dah5",
         "target" => "_blank",
-        "image" => "/assets/images/logos/dah5-logo-2024-alternate-150x35.png",
+        "image" => "--- metadata.images_url ---/logos/dah5-logo-2024-alternate-150x35.png",
         "color" => "rgb( 38, 38, 38 )",
     ),
 );
