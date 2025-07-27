@@ -3,7 +3,7 @@ site_title: David Hunter
 site_tagline: Internet Services Specialist
 site_author: David Hunter
 
-website_source_code_url: https://github.com/DavidHunterScot/Website
+website_source_code_url: https://weburl.net/github/davidhunterscot/website
 
 images_url: https://assets.weburl.net/images
 videos_url: https://assets.weburl.net/videos
