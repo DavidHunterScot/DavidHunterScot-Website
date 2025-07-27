@@ -90,7 +90,7 @@ $configurable_options[ 'minify_js' ] = true;
 	Set to an array of tag names (e.g. "pre") to enable, set to an empty array, or remove the option entirely to disable.
 */
 
-$configurable_options[ 'minify_html_tags_to_preserve' ] = array();
+$configurable_options[ 'minify_html_tags_to_preserve' ] = array( "pre" );
 
 
 /*

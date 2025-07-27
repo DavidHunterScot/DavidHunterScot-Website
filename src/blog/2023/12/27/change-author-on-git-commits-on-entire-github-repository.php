@@ -26,21 +26,20 @@ current_page: blog
 
 <p>Firstly though, you must change the parts at the top of the script to match your situation.</p>
 
-<pre><code>
-git filter-branch --env-filter '<br>
-OLD_EMAIL="your.name@email.tld"<br>
-CORRECT_NAME="Your Name"<br>
-CORRECT_EMAIL="your.name@newemail.tld"<br>
-if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]<br>
-then<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;export GIT_COMMITTER_NAME="$CORRECT_NAME"<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"<br>
-fi<br>
-if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]<br>
-then<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;export GIT_AUTHOR_NAME="$CORRECT_NAME"<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"<br>
-fi<br>
+<pre><code>git filter-branch --env-filter '
+OLD_EMAIL="your.name@email.tld"
+CORRECT_NAME="Your Name"
+CORRECT_EMAIL="your.name@newemail.tld"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
 ' --tag-name-filter cat -- --branches --tags
 </code></pre>
 
