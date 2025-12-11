@@ -101,6 +101,7 @@ body
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  height: 100%;
 }
 
 body
@@ -108,6 +109,10 @@ body
   background-color: var( --color-background );
   color: var( --color-text );
   overflow-y: scroll;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+  min-height: 100vh;
 }
 
 a
@@ -132,6 +137,7 @@ header
 {
   background-color: var( --color-background-alt );
   box-shadow: 3px 3px 5px var( --color-shadow );
+  grid-area: header;
 }
 
 header .container
@@ -198,6 +204,11 @@ header nav a.current
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+}
+
+main
+{
+  grid-area: main;
 }
 
 main a
@@ -313,6 +324,7 @@ footer
 {
   text-align: centerd;
   font-size: 0.8rem;
+  grid-area: footer;
 }
 
 .home_hero
