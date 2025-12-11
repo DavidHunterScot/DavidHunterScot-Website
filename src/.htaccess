@@ -3,5 +3,9 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
     RewriteEngine on
 
-    RewriteRule ^(.*)$ https://www.dah5.me.uk/davidhunter/$1 [R=307,END]
+    RewriteCond %{env:HTTPS} !on
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=307,END]
+
+    RewriteCond %{HTTP_HOST} !^www.davidhunter.scot$
+    RewriteRule ^(.*)$ https://www.davidhunter.scot/$1 [R=307,END]
 </IfModule>

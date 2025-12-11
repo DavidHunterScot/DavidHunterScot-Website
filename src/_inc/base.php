@@ -5,8 +5,8 @@ site_author: David Hunter
 
 website_source_code_url: https://weburl.net/github/davidhunterscot/website
 
-images_url: https://assets.weburl.net/images
-videos_url: https://assets.weburl.net/videos
+images_url: https://assets.davidhunter.scot/images
+videos_url: https://assets.davidhunter.scot/videos
 webfonts_url: /assets/webfonts
 
 content_placeholder: {{ content }}
