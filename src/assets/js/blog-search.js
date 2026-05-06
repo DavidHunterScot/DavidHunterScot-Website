@@ -53,11 +53,11 @@ xhttp.onload = function()
 
             return false;
         }
-    }
+    };
 
     xhttp1.open( "GET", "/api/blog/entry-snippet.txt" );
     xhttp1.send();
-}
+};
 
 xhttp.open( "GET", "/api/blog/entries.json" );
 xhttp.send();

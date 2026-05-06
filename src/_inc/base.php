@@ -17,12 +17,12 @@ content_placeholder: {{ content }}
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title><?php if( isset( $metadata['article_title'] ) && $metadata['article_title'] ): echo $metadata['article_title'] . ' - Blog - '; endif; if( isset( $metadata['page_title'] ) && $metadata['page_title'] ) echo $metadata['page_title'] . ' - '; ?><?php echo $metadata['site_title']; ?><?php if( ! isset( $metadata['page_title'] ) && ! isset( $metadata['article_title'] ) ) echo ' - ' . $metadata['site_tagline']; ?></title>
-
+        <title>--- if( article_title ) ------ metadata.article_title --- - Blog - --- endif ------ if( page_title ) ------ metadata.page_title --- - --- endif ------ metadata.site_title ------ if( ! page_title && ! article_title ) --- - --- metadata.site_tagline ------ endif ---</title>
+        
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-        <link rel="stylesheet" type="text/css" href="<?php echo $metadata['webfonts_url']; ?>/poppins/poppins.css">
-        <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="--- metadata.webfonts_url ---/poppins/poppins.min.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.min.css">
 
         <?php include __DIR__ . DIRECTORY_SEPARATOR . 'stylesheets.php'; ?>
     </head>
@@ -66,8 +66,8 @@ content_placeholder: {{ content }}
 
         <?php include __DIR__ . DIRECTORY_SEPARATOR . 'site-footer.php'; ?>
 
-        <script type="text/javascript" src="/assets/js/anti-email-harvesting.js"></script>
-        <script type="text/javascript" src="/assets/js/toggle-color-scheme.js"></script>
+        <script type="text/javascript" src="/assets/js/anti-email-harvesting.min.js"></script>
+        <script type="text/javascript" src="/assets/js/toggle-color-scheme.min.js"></script>
         
         <?php include __DIR__ . DIRECTORY_SEPARATOR . 'footer-javascripts.php'; ?>
     </body>
