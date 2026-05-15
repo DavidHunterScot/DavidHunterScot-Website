@@ -9,6 +9,14 @@ images_url: https://assets.davidhunter.scot/images
 videos_url: https://assets.davidhunter.scot/videos
 webfonts_url: /assets/webfonts
 
+stylesheets:
+- /assets/webfonts/poppins/poppins.min.css
+- /assets/css/stylesheet.min.css
+
+javascripts:
+- /assets/js/anti-email-harvesting.min.js
+- /assets/js/toggle-color-scheme.min.js
+
 content_placeholder: {{ content }}
 ---
 <!DOCTYPE html>
@@ -21,10 +29,9 @@ content_placeholder: {{ content }}
         
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-        <link rel="stylesheet" type="text/css" href="--- metadata.webfonts_url ---/poppins/poppins.min.css">
-        <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.min.css">
-
-        <?php include __DIR__ . DIRECTORY_SEPARATOR . 'stylesheets.php'; ?>
+        --- loop( metadata = "stylesheets" ) ---
+        <link rel="stylesheet" type="text/css" href="--- loop.item ---">
+        --- endloop ---
     </head>
     
     <body>
@@ -66,9 +73,8 @@ content_placeholder: {{ content }}
 
         <?php include __DIR__ . DIRECTORY_SEPARATOR . 'site-footer.php'; ?>
 
-        <script type="text/javascript" src="/assets/js/anti-email-harvesting.min.js"></script>
-        <script type="text/javascript" src="/assets/js/toggle-color-scheme.min.js"></script>
-        
-        <?php include __DIR__ . DIRECTORY_SEPARATOR . 'footer-javascripts.php'; ?>
+        --- loop( metadata = "javascripts" ) ---
+        <script type="text/javascript" src="--- loop.item ---"></script>
+        --- endloop ---
     </body>
 </html>

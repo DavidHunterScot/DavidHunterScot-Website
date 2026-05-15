@@ -1,7 +1,8 @@
 ---
 current_page: blog
 page_title: Blog
-footer_scripts: /assets/js/blog-search.min.js
+javascripts:
+- /assets/js/blog-search.min.js
 layout: src/_inc/base.php
 ---
 
