@@ -18,7 +18,7 @@ layout: src/_inc/base.php
 
         <p>One more thing, if you're not doing much else right now, maybe you could check out my <a href="/blog">blog</a>?</p>
 
-        <p>For those that are technically minded, I write software for various projects. Check out the source code for my other projects on <a href="https://github.com/DavidHunterScot" target="_blank">GitHub</a>.</p>
+        <p>For those that are technically minded, I write software for various projects. Check out the source code for my other projects on <a href="--- metadata.github_url ---" target="_blank">GitHub</a>.</p>
     </div>
 
     <div class="avatar">

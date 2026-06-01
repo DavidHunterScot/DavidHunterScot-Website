@@ -6,9 +6,9 @@
         </div>
 
         <nav>
-            <a href="/"<?php if( isset( $metadata['current_page'] ) && $metadata['current_page'] == "home" ): ?> class="current"<?php endif; ?>>Home</a>
-            <a href="/blog"<?php if( isset( $metadata['current_page'] ) && $metadata['current_page'] == "blog" ): ?> class="current"<?php endif; ?>>Blog</a>
-            <a href="/projects"<?php if( isset( $metadata['current_page'] ) && $metadata['current_page'] == "projects" ): ?> class="current"<?php endif; ?>>Projects</a>
+            <a href="/"--- if( current_page == "home" ) --- class="current"--- endif --->Home</a>
+            <a href="/blog"--- if( current_page == "blog" ) --- class="current"--- endif --->Blog</a>
+            <a href="/projects"--- if( current_page == "projects" ) --- class="current"--- endif --->Projects</a>
         </nav>
     </div>
 </header>
