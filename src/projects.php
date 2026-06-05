@@ -14,33 +14,24 @@ $projects = array
     (
         "title" => "Personal Website",
         "description" => "It is all about me",
-        "url" => "https://weburl.net/davidhunter",
+        "url" => "https://davidhunter.dah5.me.uk",
         "image" => "--- metadata.images_url ---/avatars/davidhunter_illustration_transparent_1.png",
         "color" => "#333",
     ),
     array
     (
         "title" => "StaticPHP",
-        "description" => "A Static Site Generator that turns PHP files into HTML files.",
-        "url" => "https://weburl.net/staticphp",
+        "description" => "The Fast and Simple Static Site Generator",
+        "url" => "https://staticphp.dah5.me.uk",
         "target" => "_blank",
         "image" => "--- metadata.images_url ---/logos/StaticPHP-Promo1.png",
         "color" => "#7A86B8",
     ),
     array
     (
-        "title" => "Staticly",
-        "description" => "The essential repository for Front End Web Developers.",
-        "url" => "https://weburl.net/staticly",
-        "target" => "_blank",
-        "image" => "",
-        "color" => "#4A9CB3",
-    ),
-    array
-    (
         "title" => "Network Tools",
         "description" => "Web based tools related to computer networks.",
-        "url" => "https://weburl.net/networktools",
+        "url" => "https://networktools.dah5.me.uk",
         "target" => "_blank",
         "image" => "",
         "color" => "#ffffff",
@@ -49,7 +40,7 @@ $projects = array
     (
         "title" => "DAH5",
         "description" => "The website that started it all, originally launched back in April 2005!",
-        "url" => "https://weburl.net/dah5",
+        "url" => "https://www.dah5.me.uk",
         "target" => "_blank",
         "image" => "--- metadata.images_url ---/logos/dah5-logo-2024-alternate-150x35.png",
         "color" => "rgb( 38, 38, 38 )",
