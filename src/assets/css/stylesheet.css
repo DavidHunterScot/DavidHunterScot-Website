@@ -600,3 +600,16 @@ embed.video, iframe.video, video.video
   max-width: calc( 100% + 2rem );
   width: calc( 100% + 2rem );
 }
+
+/* External Links */
+a[ target = "_blank" ]:after
+{
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: 0.3em;
+  background: currentColor;
+  mask: url( "/assets/images/ui/external-link.svg" ) no-repeat center;
+  mask-size: contain;
+}
